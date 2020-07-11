@@ -1,0 +1,123 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 10px auto;
+}
+
+.flex-container, .flex-grow, .flex-shrink, .flex-wrap, .flex-basis {
+  display: flex;
+  background: #fff;
+  margin: 10px 0px;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* .box {
+  height: 100px;
+  min-width: 200px;
+}
+
+.one {
+  background: red;
+}
+
+.two {
+  background: blue;
+}
+
+.three {
+  background: green;
+} */
+
+.basis-box {
+  height: 100px;
+  /* min-width: 320px; */
+  /* min-width vs flex-basis, flex-basic will continue shrink */
+  flex-basis: 320px;
+}
+
+.basis-one {
+  background: red;
+}
+
+.basis-two {
+  background: blue;
+}
+
+.basis-three {
+  background: green;
+}
+
+.wrap-box {
+  height: 100px;
+  /* make the box cannot shrink any further */
+  min-width: 200px;
+  flex-grow: 1;
+}
+
+.wrap-one {
+  background: red;
+}
+
+.wrap-two {
+  background: blue;
+}
+
+.wrap-three {
+  background: green;
+}
+
+.shrink-box {
+  height: 100px;
+  width: 320px;
+}
+
+.shrink-one {
+  background: red;
+  flex-shrink: 1;
+}
+
+.shrink-two {
+  background: blue;
+  flex-shrink: 2;
+}
+
+.shrink-three {
+  background: green;
+  /* the bigger the shrink rate, the more it shrinks */
+  flex-shrink: 3;
+}
+
+.grow-box {
+  height: 100px;
+  min-width: 100px;
+}
+
+.grow-one {
+  background: red;
+  /* relate to other flex-grow item in ratio */
+  flex-grow: 1;
+}
+
+.grow-two {
+  background: blue;
+  /* relate to other flex-grow item in ratio */
+  flex-grow: 2;
+}
+
+.grow-three {
+  background: green;
+  /* relate to other flex-grow item in ratio */
+  flex-grow: 3;
+}
